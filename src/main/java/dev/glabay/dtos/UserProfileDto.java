@@ -13,7 +13,6 @@ public record UserProfileDto(
     String firstName,
     String lastName,
     String contactNumber,
-    String encryptedPassword,
     LocalDateTime createdAt,
     LocalDateTime updatedAt
 ) {}
