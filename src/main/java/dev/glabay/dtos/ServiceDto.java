@@ -7,6 +7,7 @@ package dev.glabay.dtos;
  * @since 2024-11-22
  */
 public record ServiceDto(
+    Long serviceId,
     String serviceName,
     String serviceDescription,
     double servicePrice,
