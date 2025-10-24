@@ -1,5 +1,6 @@
 package dev.glabay.dtos;
 
+import java.time.LocalDateTime;
 import java.util.Date;
 
 /**
@@ -11,6 +12,8 @@ import java.util.Date;
 public record CustomerDeviceDto(
     Long deviceId,
     Long customerId,
-    Date dropOffDate,
-    String notes
+    LocalDateTime createdAt,
+    LocalDateTime updatedAt,
+    String deviceName,
+    String deviceType
 ) {}

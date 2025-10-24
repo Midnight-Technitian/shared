@@ -1,5 +1,7 @@
 package dev.glabay.dtos;
 
+import java.time.LocalDateTime;
+
 /**
  * @author Glaba
  * @project GlabTech
@@ -10,5 +12,7 @@ public record CustomerDto(
     String firstName,
     String lastName,
     String email,
-    String contactNumber
+    String contactNumber,
+    LocalDateTime createdAt,
+    LocalDateTime updatedAt
 ) {}
