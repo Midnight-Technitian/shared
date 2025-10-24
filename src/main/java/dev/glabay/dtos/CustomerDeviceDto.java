@@ -9,8 +9,8 @@ import java.util.Date;
  * @since 2024-11-22
  */
 public record CustomerDeviceDto(
-    Integer dropOffId,
-    Integer customerId,
+    Long deviceId,
+    Long customerId,
     Date dropOffDate,
     String notes
 ) {}
