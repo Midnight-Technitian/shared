@@ -1,5 +1,6 @@
 plugins {
     id 'java'
+    id "io.sentry.jvm.gradle" version "5.12.1"
 }
 
 group = 'dev.glabay'
@@ -9,6 +10,22 @@ repositories {
     mavenCentral()
 }
 
+sentry {
+    // Generates a JVM (Java, Kotlin, etc.) source bundle and uploads your source code to Sentry.
+    // This enables source context, allowing you to see your source
+    // code as part of your stack traces in Sentry.
+    includeSourceContext = true
+
+    org = "glabay-studios"
+    projectName = "midnight-technician"
+    authToken = System.getenv("SENTRY_AUTH_TOKEN")
+}
+
 dependencies {
     implementation("org.projectlombok:lombok:1.18.40")
+
+    implementation("io.sentry:sentry:7.14.0")
+    implementation("io.sentry:sentry-logback:7.14.0")
+
+    implementation("org.slf4j:slf4j-api:2.0.17")
 }
