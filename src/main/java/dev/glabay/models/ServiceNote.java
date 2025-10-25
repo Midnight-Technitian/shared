@@ -10,6 +10,5 @@ public record ServiceNote(
     String noteId,
     String ticketId,
     String technicianId,
-    String title,
     String message
 ) {}
