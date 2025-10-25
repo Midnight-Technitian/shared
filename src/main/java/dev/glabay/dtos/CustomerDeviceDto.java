@@ -11,7 +11,7 @@ import java.util.Date;
  */
 public record CustomerDeviceDto(
     Long deviceId,
-    Long customerId,
+    String customerEmail,
     LocalDateTime createdAt,
     LocalDateTime updatedAt,
     String deviceName,
