@@ -15,5 +15,6 @@ public record CustomerDeviceDto(
     LocalDateTime createdAt,
     LocalDateTime updatedAt,
     String deviceName,
-    String deviceType
+    String deviceType,
+    String deviceInfo
 ) {}
