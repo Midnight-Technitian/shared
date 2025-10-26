@@ -1,6 +1,9 @@
 package dev.glabay.dtos;
 
+import dev.glabay.models.roles.Role;
+
 import java.time.LocalDateTime;
+import java.util.Set;
 
 /**
  * @author Glabay | Glabay-Studios
@@ -13,6 +16,7 @@ public record UserProfileDto(
     String firstName,
     String lastName,
     String contactNumber,
+    Set<Role> roles,
     LocalDateTime createdAt,
     LocalDateTime updatedAt
 ) {}
