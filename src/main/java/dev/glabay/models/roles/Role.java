@@ -10,5 +10,6 @@ public enum Role {
     ROLE_USER,
     ROLE_TECHNICIAN,
     ROLE_MANAGER,
+    ROLE_DEVELOPER,
     ROLE_OWNER
 }
