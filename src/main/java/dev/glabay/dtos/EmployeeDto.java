@@ -1,6 +1,10 @@
 package dev.glabay.dtos;
 
+import dev.glabay.models.EmploymentStatus;
+
 import java.time.LocalDate;
+import java.time.LocalDateTime;
+
 /**
  * @author Glaba
  * @project GlabTech
@@ -8,10 +12,22 @@ import java.time.LocalDate;
  * @since 2024-11-22
  */
 public record EmployeeDto(
-    String employeeFirstName,
-    String employeeLastName,
-    LocalDate employeeStartDate,
-    LocalDate employeeEndDate,
-    String contactNumber,
-    String position
+   String employeeId,
+   String email,
+   String firstName,
+   String lastName,
+   String contactNumber,
+   String positionTitle,
+   String profileImageUrl,
+   String createdBy,
+   String updatedBy,
+
+   EmploymentStatus status,
+
+   LocalDate employeeStartDate,
+   LocalDate employeeEndDate,
+
+   LocalDateTime lastLoginAt,
+   LocalDateTime createdAt,
+   LocalDateTime updatedAt
 ) {}
