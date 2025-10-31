@@ -22,6 +22,10 @@ sentry {
 }
 
 dependencies {
+    implementation("com.fasterxml.jackson.core:jackson-databind:2.20.0")
+
+    implementation("org.springframework.kafka:spring-kafka:4.0.0-M3")
+
     implementation("org.projectlombok:lombok:1.18.40")
 
     implementation("io.sentry:sentry:7.14.0")
