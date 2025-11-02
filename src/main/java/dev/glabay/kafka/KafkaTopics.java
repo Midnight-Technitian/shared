@@ -9,7 +9,8 @@ package dev.glabay.kafka;
 public enum KafkaTopics {
     USER_REGISTRATION("user-registered"),
     CUSTOMER_CREATION("customer-created"),
-    SERVICE_TICKET_CREATION("service-ticket-creation")
+    SERVICE_TICKET_CREATION("service-ticket-creation"),
+    CUSTOMER_DEVICE_REGISTRATION("customer-device-registration")
     ;
     private final String topicName;
 
