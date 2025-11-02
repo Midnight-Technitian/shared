@@ -1,6 +1,5 @@
-package dev.glabay.kafka;
+package dev.glabay.kafka.events;
 
-import dev.glabay.dtos.ServiceTicketDto;
 import dev.glabay.models.request.ServiceRequest;
 
 /**
