@@ -10,7 +10,13 @@ public enum KafkaTopics {
     USER_REGISTRATION("user-registered"),
     CUSTOMER_CREATION("customer-created"),
     SERVICE_TICKET_CREATION("service-ticket-creation"),
-    CUSTOMER_DEVICE_REGISTRATION("customer-device-registration")
+    CUSTOMER_DEVICE_REGISTRATION("customer-device-registration"),
+
+    /// Analytic Services below
+    SERVICE_TICKET_CREATED("service-ticket-created"),
+    SERVICE_TICKET_CLAIMED("service-ticket-claimed"),
+    SERVICE_TICKET_UPDATED("service-ticket-update"),
+    SERVICE_TICKET_CLOSED("service-ticket-closed"),
     ;
     private final String topicName;
 
