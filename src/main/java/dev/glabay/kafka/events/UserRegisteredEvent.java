@@ -8,4 +8,4 @@ import dev.glabay.dtos.UserProfileDto;
  * @social Discord: Glabay
  * @since 2025-11-01
  */
-public record UserRegisteredEvent(UserProfileDto userDto) {}
+public record UserRegisteredEvent(UserProfileDto userDto, String ipAddress) {}
