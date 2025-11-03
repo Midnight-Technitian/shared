@@ -9,6 +9,7 @@ import java.time.LocalDateTime;
  * @since 2024-11-30
  */
 public record UserProfileDto(
+    Long uid,
     String email,
     String firstName,
     String lastName,
