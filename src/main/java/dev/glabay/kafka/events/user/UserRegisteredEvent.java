@@ -1,4 +1,4 @@
-package dev.glabay.kafka.events;
+package dev.glabay.kafka.events.user;
 
 import dev.glabay.dtos.UserProfileDto;
 

@@ -1,4 +1,4 @@
-package dev.glabay.kafka.events;
+package dev.glabay.kafka.events.device;
 
 import dev.glabay.models.device.RegisteringDevice;
 

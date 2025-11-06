@@ -1,4 +1,4 @@
-package dev.glabay.kafka.events;
+package dev.glabay.kafka.events.ticket;
 
 import dev.glabay.models.request.ServiceRequest;
 
