@@ -40,7 +40,6 @@ public class MidnightLogger implements Logger {
         return result;
     }
 
-
     @Override
     public void error(String s, Throwable throwable) {
         Sentry.addBreadcrumb(s, "error");
@@ -117,18 +116,21 @@ public class MidnightLogger implements Logger {
     @Override
     public void warn(String message) {
         Sentry.addBreadcrumb(message, "warning");
+        Sentry.captureMessage(message, SentryLevel.WARNING);
         logger.warn(message);
     }
 
     @Override
     public void warn(String s, Object o) {
         Sentry.addBreadcrumb(s.replace("{}", String.valueOf(o)), "warning");
+        Sentry.captureMessage(s.replace("{}", String.valueOf(o)), SentryLevel.WARNING);
         logger.warn(s, o);
     }
 
     @Override
     public void warn(String s, Object... objects) {
         Sentry.addBreadcrumb(formatMessage(s, objects), "warning");
+        Sentry.captureMessage(formatMessage(s, objects), SentryLevel.WARNING);
         logger.warn(s, objects);
     }
 
@@ -136,6 +138,7 @@ public class MidnightLogger implements Logger {
     public void warn(String s, Object o, Object o1) {
         String formatted = s.replace("{}", String.valueOf(o)).replace("{}", String.valueOf(o1));
         Sentry.addBreadcrumb(formatted, "warning");
+        Sentry.captureMessage(formatted, SentryLevel.WARNING);
         logger.warn(s, o, o1);
     }
 
