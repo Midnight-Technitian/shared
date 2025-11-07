@@ -12,6 +12,9 @@ public enum KafkaTopics {
     SERVICE_TICKET_CREATION("service-ticket-creation"),
     CUSTOMER_DEVICE_REGISTRATION("customer-device-registration"),
 
+    /// Email
+    EMAIL_SEND_REQUEST("email-send-request"),
+    EMAIL_SENT_ANALYTIC("email-sent-analytic"),
 
     /// Analytic Services below
     SERVICE_TICKET_CREATED("service-ticket-created"),
