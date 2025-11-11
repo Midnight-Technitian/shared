@@ -22,6 +22,9 @@ public enum KafkaTopics {
     SERVICE_TICKET_UPDATED("service-ticket-update"),
     SERVICE_TICKET_CLOSED("service-ticket-closed"),
 
+    ///  Customer Creation
+    CUSTOMER_CREATED_ANALYTIC("customer-created-analytic"),
+
     /// Scheduling
     TECHNICIAN_CLOCK_IN("technician-clock-in"),
     TECHNICIAN_CLOCK_OUT("technician-clock-out"),
